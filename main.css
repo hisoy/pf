@@ -1,0 +1,83 @@
+@media screen {}
+@media print {}
+@media screen {
+	div#preloader {
+		position: absolute;
+		left: -9999px;
+		top:  -9999px;
+		}
+	div#preloader img {
+		display: block;
+		}
+	}
+@media print {
+	div#preloader, 
+	div#preloader img {
+		visibility: hidden;
+		display: none;
+		}
+	}
+
+html, body {
+    @import url(http://fonts.googleapis.com/css?family=Roboto);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    
+}
+
+#bg {
+    background-image: url('img/bg%20(1).png');
+    background-size:   contain;                    
+    background-repeat: no-repeat;
+    background-position: center bottom;  
+    z-index: 0;
+}
+
+#text {
+    font-size : 10pt;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+#logo {
+    font-size : 10pt;
+    visibility: hidden;
+    position : absolute;
+    text-align: center;
+    bottom: 20px;
+    left: 20px;
+}
+
+.submenu {
+    visibility: hidden;
+    width : 80%;
+    height : 90px;
+    position : absolute;
+    text-align: center;
+    bottom: 20px;
+    left: 0px;
+    display: flex;
+    vertical-align: middle;
+    
+}
+
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    font-size : 9pt;
+    background : rgba(255,255,255,0.6);
+    width : 90px;
+    margin-right: 20px;
+    line-height: 1.5em;
+
+    
+}
