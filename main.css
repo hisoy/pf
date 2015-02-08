@@ -32,12 +32,15 @@ html, body {
 }
 
 #bg {
-    background-image: url('img/bg%20(1).png');
+    background-image: url('img/bg%20(67).png');
     background-size:   contain;                    
     background-repeat: no-repeat;
     background-position: center bottom;  
     z-index: 0;
 }
+
+
+
 
 #text {
     font-size : 10pt;
@@ -45,23 +48,25 @@ html, body {
     line-height: 1.5em;
 }
 
+
+
 #logo {
     font-size : 10pt;
     visibility: hidden;
     position : absolute;
     text-align: center;
-    bottom: 20px;
+    bottom: 10px;
     left: 20px;
 }
 
 .submenu {
     visibility: hidden;
     width : 80%;
-    height : 90px;
+    height : 80px;
     position : absolute;
     text-align: center;
-    bottom: 20px;
-    left: 0px;
+    bottom: 10px;
+    left: 20px;
     display: flex;
     vertical-align: middle;
     
@@ -74,10 +79,42 @@ html, body {
     align-items: center;
     vertical-align: middle;
     font-size : 9pt;
-    background : rgba(255,255,255,0.6);
-    width : 90px;
-    margin-right: 20px;
-    line-height: 1.5em;
+    background : rgba(255,255,255,0.4);
+    width : 80px;
+    margin-right: 10px;
+    line-height: 1.5em;    
+}
 
-    
+
+.seize:hover{
+     background-image : url('seize/thumb.png');
+    font-size : 0pt;
+}
+.lpify:hover{
+    background-image : url('lpify/thumb.png');
+    font-size : 0pt;
+}
+.youshare:hover{
+    background-image : url('youshare/thumb.png');
+    font-size : 0pt;
+}
+.ryou:hover{
+    background-image : url('ryou/thumb.png');
+    font-size : 0pt;
+}
+.vl:hover{
+    background-image : url('vl/thumb.png');
+    font-size : 0pt;    
+}
+.platypus:hover{
+    background-image : url('platypus/thumb.png');
+    font-size : 0pt;
+}
+.navpal:hover{
+    background-image : url('navpal/thumb.png');
+    font-size : 0pt;
+}
+.engage:hover{
+    background-image : url('engage/thumb.png');
+    font-size : 0pt;
 }
