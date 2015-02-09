@@ -6,7 +6,7 @@ function showImage(name){
     console.log("function works" + name);
       var bg = document.getElementsByClassName('main');
         for(var i = 0; i < bg.length; i++) {
-            bg[i].style.backgroundImage = 'url("youshare/'+ name + '.png")';
+            bg[i].style.backgroundImage = 'url("vl/'+ name + '.png")';
         }
 }
 

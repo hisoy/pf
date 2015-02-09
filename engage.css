@@ -82,7 +82,7 @@ html, body {
     vertical-align: middle;
     width :100%;
     height:80%;
-    background-image : url('lpify/p1.jpg');
+    background-image : url('engage/p1.png');
     background-size:contain;  
     background-repeat: no-repeat;
     background-position: center center; 
@@ -109,28 +109,18 @@ html, body {
 }
 
 .p1{
-    background-image:url("youshare/p1.jpg"); 
+    background-image:url("engage/p1.png"); 
     
 }
 
 .p2{
-    background-image:url("lpify/p2.jpg"); 
+    background-image:url("engage/p2.png"); 
 }
 
-.p3{
-    background-image:url("lpify/p3.jpg"); 
-}
-.p4{
-    background-image:url("lpify/p4.jpg"); 
-}
-.p5{
-    background-image:url("lpify/p5.jpg"); 
-}
 
 .f{
-    background-image:url("lpify/f.jpg"); 
+    background-image:url("engage/p3.png"); 
 }
-
 
 #text {
     -webkit-box-sizing: border-box; 
