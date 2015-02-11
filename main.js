@@ -1,78 +1,125 @@
-var pageNum =69;
+var pageNum =68;
 
-
+//(1~67)images sequence exists.
 
 document.onkeyup = checkKey;
 
-
-
-
 function checkKey(e) {
-             console.log(pageNum);
-
-    document.getElementById('logo').style.display = "block";
+console.log(pageNum);
     e = e || window.event;
-    if (e.keyCode == '39') {
+    
+    //arrow key react
+    if ((e.keyCode == '39')&&(pageNum <= 75)) {
         pageNum ++;
     }
     else if ((e.keyCode == '37')&&(pageNum > 70)){
-          pageNum --;
+        pageNum --;
     }
     
+    //change image
      if (pageNum < 68){   
-            var imageUrl = 'img/bg%20('+ pageNum + ").png";
-            document.getElementById("bg").style.backgroundImage="url('"+ imageUrl + "')";
-            console.log(imageUrl);
-                    }
-        if (pageNum < 3){
-            document.getElementById("text").innerHTML = "Hey, could you hit the right arrow key and help us move this car?</br></br></br></br></br></br></br></br></br></br></br></br>";
-        }
-        else if (pageNum == 69){
-            document.getElementById("text").innerHTML = "Nice team work! Will you press the key again?</br></br></br></br></br></br></br></br></br></br></br></br>";
-        }
-        else if (pageNum >= 70){
-            document.getElementById("text").innerHTML = "Team-work and iteration can be fun, right? <br> I am Soyeon, an interaction designer who is passionate about conceptualization and quick-prototyping. <br><br>This portfolio can be navigated through the logo in the bottom left or the right arrow key. <br>When you feel the click, contact me. I will probably feel the same about you.<br><br><br><br><br><br><br><br>";
-            
-            document.getElementById("logo").style.visibility="visible";
+        var imageUrl = 'img/bg%20('+pageNum+").png";
+        document.getElementById("bg").style.backgroundImage="url('"+ imageUrl + "')";
+    }
+    
+    //first message
+    if (pageNum > 3){
+        document.getElementById("intro").style.display="none";
+     }
+    
+    if (pageNum == 69){
+        document.getElementById("intro").innerHTML = "Nice team work! <br>Team-work and iteration can be fun, at least we make some memories. <br> Hi, I'm Soyeon, an interaction designer. <br>I am passionate about conceptualization and quick prototyping. <br>This portfolio can be navigated through the logo in the bottom left or the right arrow key. <br>When you feel the click, contact me. I will probably feel the same about you.<br>More?<br><br><br><br><br><br><br>";
+        document.getElementById("intro").style.display = "block";
+        document.getElementById("logo").style.visibility="visible";
         }
     
+    if (pageNum == 70){
+        empty();    document.getElementById("youshare_field").style.display="block";
+        document.getElementById("logo").style.visibility="visible";
+        }
+
+    if (pageNum == 71){
+         empty();
+        document.getElementById("lpify_field").style.display="block";
+        document.getElementById("logo").style.visibility="visible";
+        }
+    if (pageNum == 72){
+        empty();                document.getElementById("ryou_field").style.display="block";
+
+        document.getElementById("logo").style.visibility="visible";
+        }
+    if (pageNum == 73){
+         empty(); document.getElementById("vl_field").style.display="block";
+
+        document.getElementById("logo").style.visibility="visible";
+        }
     
-        else {
-            document.getElementById("text").innerHTML = "";
+       if (pageNum == 74){
+         empty();
+ document.getElementById("platypus_field").style.display="block";
+
+        document.getElementById("logo").style.visibility="visible";
+        }
+    
+    if (pageNum == 75){
+         empty();
+        document.getElementById("navpal_field").style.display="block";
+
+        document.getElementById("logo").style.visibility="visible";
+        }
+      if (pageNum >= 76){
+        empty(); document.getElementById("engage_field").style.display="block";
+
+        document.getElementById("logo").style.visibility="visible";
         }
 
 }
 
+function content_open(page){
+    empty();
+        console.log(page)
+
+    document.getElementById(page).style.display="block";
+}
+//emptying the page
+function empty(){
+    document.getElementById("intro").style.display="none";                    document.getElementById("youshare_field").style.display="none";
+    document.getElementById("lpify_field").style.display="none";             document.getElementById("ryou_field").style.display="none";
+    document.getElementById("vl_field").style.display="none";
+    document.getElementById("platypus_field").style.display="none";
+    document.getElementById("navpal_field").style.display="none";              document.getElementById("engage_field").style.display="none";
+}
+
+//image slider
+
+function showImage(name){
+    console.log("function works" + name);
+      var bg = document.getElementsByClassName('main');
+        for(var i = 0; i < bg.length; i++) {
+            bg[i].style.backgroundImage = 'url("'+ name + '.png")';
+        }
+}
 
 
-
-
+//logo
 var menuOpen = 0;
-
 function menu_open() {
-      console.log("clicked");
-
-    if (menuOpen === 0){
+    if (menuOpen == 0){
         startBall();
         var elems = document.getElementsByClassName('submenu');
         for(var i = 0; i < elems.length; i++) {
             elems[i].style.visibility = 'visible';
+            console.log("show");
         }
         menuOpen = 1- menuOpen;
 
     }
-    
     else{
-        endBall();
-        
+        endBall();        
          menuOpen = 1- menuOpen;
     }
-        console.log("this/"+menuOpen);
 
 }
-
-
-
 
 
 function startBall()
@@ -83,30 +130,20 @@ function startBall()
 
 function endBall()
 {
-    console.log("iknow youwill");
   timer2 = setTimeout(stepBall1, 3);
-    console.log("whataboutthis");
 }
-
-
-
 
 
 var timer2 = null;
 var s = 10;
 function stepBall1()
 {    
-console.log("stepin");
 var obj = document.getElementsByClassName('submenu');  
   
   for(var i = 0; i < obj.length; i++) {
     obj[i].style.left = -s +"px";
   }
-  console.log(s);
-
   s++;
-
-
   if (s<15)
   {
     timer2 = setTimeout(stepBall1, 1);
@@ -122,12 +159,11 @@ var obj = document.getElementsByClassName('submenu');
   else
   {
       var elems = document.getElementsByClassName('submenu');
-
       for(var i = 0; i < elems.length; i++) {
             console.log("hide");
             elems[i].style.visibility = 'hidden';
         }
-    s = 10;     // so we can do it again
+    s = 10;     
   }
 }
 
@@ -139,11 +175,7 @@ var obj = document.getElementsByClassName('submenu');
     obj[i].style.left = 5*s +"px";
 
 }
-  console.log(s);
-
   s++;
-
-
   if (s<15)
   {
     timer2 = setTimeout(stepBall2, 3);

@@ -1,3 +1,4 @@
+/* pushing */
 @media screen {}
 @media print {}
 @media screen {
@@ -18,7 +19,10 @@
 		}
 	}
 
+/* common */
+
 html, body {
+    @import url(http://fonts.googleapis.com/css?family=Slabo+27px); 
     @import url(http://fonts.googleapis.com/css?family=Roboto);
     height: 100%;
     margin: 0;
@@ -31,21 +35,348 @@ html, body {
     
 }
 
+
+::-webkit-scrollbar {
+    width: 25px;
+    height: 18px;
+}
+::-webkit-scrollbar-thumb {
+    height: 6px;
+    border: 8px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    background-color: #ccc;
+   
+}
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+}
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
 #bg {
-    background-image: url('img/bg%20(67).png');
+    background-image: url('img/bg%20(1).png');
     background-size:   contain;                    
     background-repeat: no-repeat;
     background-position: center bottom;  
     z-index: 0;
 }
 
-
-
-
-#text {
+#lpify_field{
+    background-color : rgba(255,255,255,0.92);
+    width : 1138px;
+    mih-width : 1138px;
+    height : 470px;
+    min-height: 470px;
+    display : none;
+}
+#ryou_field{
+    background-color : rgba(255,255,255,0.92);
+    width : 1138px;
+    mih-width : 1138px;
+    height : 470px;
+    min-height: 470px;
+    display : none;
+}
+#youshare_field{
+    background-color : rgba(255,255,255,0.92);
+    width : 1138px;
+    mih-width : 1138px;
+    height : 470px;
+    min-height: 470px;
+    display : none;
+}
+#vl_field{
+    background-color : rgba(255,255,255,0.92);
+    width : 1138px;
+    mih-width : 1138px;
+    height : 470px;
+    min-height: 470px;
+    display : none;
+}
+#platypus_field{
+    background-color : rgba(255,255,255,0.92);
+    width : 1138px;
+    mih-width : 1138px;
+    height : 470px;
+    min-height: 470px;
+    display : none;
+}
+#navpal_field{
+    background-color : rgba(255,255,255,0.92);
+    width : 1138px;
+    mih-width : 1138px;
+    height : 470px;
+    min-height: 470px;
+    display : none;
+}
+#engage_field{
+    background-color : rgba(255,255,255,0.92);
+    width : 1138px;
+    mih-width : 1138px;
+    height : 470px;
+    min-height: 470px;
+    display : none;
+}
+#picture {
+    width :50%;
+    height:100%;
     font-size : 10pt;
     text-align: center;
     line-height: 1.5em;
+    float:left;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;   
+    box-sizing: border-box;   
+    width :50%;
+    height:100%;
+    padding: 20px; 
+}
+
+.imgbox{
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;   
+    box-sizing: border-box;  
+    padding: 10px; 
+
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    width :100%;
+    height:80%;
+    background-size:contain;  
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+
+.small{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    width :100%;
+    height:20%;
+    background-size:cover;  
+    background-repeat: no-repeat;
+    background-position: center center; 
+
+}
+.img{
+    height : 100%;
+    width :70px;
+    margin-right: 10px;
+
+}
+
+.youshare{
+    background-image : url('youshare/p1.png');
+}
+
+.youshare1{
+    background-image:url("youshare/p1.png");    
+}
+
+.youshare2{
+    background-image:url("youshare/p2.png"); 
+}
+
+.youshare3{
+    background-image:url("youshare/p3.png"); 
+}
+.youshare4{
+    background-image:url("youshare/p4.png"); 
+}
+.youshare5{
+    background-image:url("youshare/p5.png"); 
+}
+.youshare6{
+    background-image:url("youshare/p6.png"); 
+}
+.youshare7{
+    background-image:url("youshare/p7.png"); 
+}
+
+
+.lpify{
+    background-image : url('lpify/p1.png');
+}
+
+.lpify1{
+    background-image:url("lpify/p1.png");    
+}
+
+.lpify2{
+    background-image:url("lpify/p2.png"); 
+}
+
+.lpify3{
+    background-image:url("lpify/p3.png"); 
+}
+.lpify4{
+    background-image:url("lpify/p4.png"); 
+}
+.lpify5{
+    background-image:url("lpify/p5.png"); 
+}
+.lpify6{
+    background-image:url("lpify/p6.png"); 
+}
+
+.ryou{
+    background-image : url('ryou/p1.png');
+}
+
+.ryou1{
+    background-image:url("ryou/p1.png");    
+}
+
+.ryou2{
+    background-image:url("ryou/p2.png"); 
+}
+
+.ryou3{
+    background-image:url("ryou/p3.png"); 
+}
+.ryou4{
+    background-image:url("ryou/p4.png"); 
+}
+.ryou5{
+    background-image:url("ryou/p5.png"); 
+}
+.ryou6{
+    background-image:url("ryou/p6.png"); 
+}
+
+.vl{
+    background-image : url('vl/p1.png');
+}
+
+.vl1{
+    background-image:url("vl/p1.png");    
+}
+
+.vl2{
+    background-image:url("vl/p2.png"); 
+}
+
+.vl3{
+    background-image:url("vl/p3.png"); 
+}
+.vl4{
+    background-image:url("vl/p4.png"); 
+}
+.vl5{
+    background-image:url("vl/p5.png"); 
+}
+.vl6{
+    background-image:url("vl/p6.png"); 
+}
+.vl7{
+    background-image:url("vl/p7.png"); 
+}
+
+
+.platypus{
+    background-image:url("platypus/p1.png");    
+}
+
+.platypus1{
+    background-image:url("platypus/p1.png");    
+}
+
+.platypus2{
+    background-image:url("platypus/p2.png"); 
+}
+
+.platypus3{
+    background-image:url("platypus/p3.png"); 
+}
+.platypus4{
+    background-image:url("platypus/p4.png"); 
+}
+.platypus5{
+    background-image:url("platypus/p5.png"); 
+}
+.platypus6{
+    background-image:url("platypus/p6.png"); 
+}
+.platypus7{
+    background-image:url("platypus/p7.png"); 
+}
+
+
+.navpal{
+    background-image:url("navpal/p1.png");    
+}
+
+.navpal1{
+    background-image:url("navpal/p1.png");    
+}
+
+.navpal2{
+    background-image:url("navpal/p2.png"); 
+}
+
+.navpal3{
+    background-image:url("navpal/p3.png"); 
+}
+
+
+.engage{
+    background-image:url("engage/p1.png");    
+}
+
+.engage1{
+    background-image:url("engage/p1.png");    
+}
+
+.engage2{
+    background-image:url("engage/p2.png"); 
+}
+
+.engage3{
+    background-image:url("engage/p3.png"); 
+}
+
+#text {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;   
+    box-sizing: border-box;   
+    width :50%;
+    height:100%;
+    padding: 15px 0px 35px 35px;
+    float:left;
+}
+
+#title {
+    font-size : 10pt;
+    text-align: left;
+    line-height: 1.4em;
+    height:20%;
+}
+
+#description{
+    font-family: 'Slabo 27px', serif;
+    height:80%;
+    color : #555;
+    font-size : 10pt;
+    text-align: justify;
+    line-height: 1.3em;
+    overflow-y: scroll;
+}
+
+
+#intro {
+    font-size : 10pt;
+    text-align: center;
+    line-height: 1.5em;
+    display : block;
 }
 
 
@@ -57,6 +388,8 @@ html, body {
     text-align: center;
     bottom: 10px;
     left: 20px;
+    z-index: 100;
+
 }
 
 .submenu {
